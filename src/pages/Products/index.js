@@ -22,9 +22,11 @@ const Products = () => {
         ))}
       </div>
 
-      <button className="botaoCarrinho" onClick={() => history.push("/cart")}>
-        Finalizar Pedido
-      </button>
+      <div className="wrapper">
+        <button className="botaoCarrinho" onClick={() => history.push("/cart")}>
+          Carrinho {cart.length} itens
+        </button>
+      </div>
     </div>
   );
 };
